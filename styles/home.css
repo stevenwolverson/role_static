@@ -179,6 +179,7 @@ header {
 }
 
 .start-guide button {
+  background-color: #fff;
   width: 100%;
   border: 2px solid var(--primary-color);
   padding: 12px 24px;
