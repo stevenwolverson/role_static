@@ -28,6 +28,10 @@ header {
   border-bottom: 1px solid #ced4da;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .logo h1 {
   margin-left: 1.8rem;
   cursor: pointer;
