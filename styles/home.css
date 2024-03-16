@@ -500,10 +500,3 @@ footer span {
   flex-direction: column;
   gap: 12px;
 }
-
-.footer-box li {
-}
-
-.footer-box ul a {
-  /* color: var(--white); */
-}
