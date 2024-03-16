@@ -18,7 +18,111 @@
   color: var(--dark-gray);
 }
 
+/* Hidden Menu */
+@keyframes slideIn {
+  0% {
+    width: 90%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.hiddenMenu {
+  display: none;
+  height: 100vh;
+  padding: 1rem;
+  overflow-y: hidden;
+}
+
+.hiddenMenu.active {
+  display: block;
+  animation: slideIn 0.5s;
+}
+
+.hiddenMenu h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.hiddenMenu button {
+  cursor: pointer;
+}
+
+.hiddenMenu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: var(--white);
+  margin-right: 1rem;
+}
+
+.container span {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.hiddenMenu a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.roles p {
+  cursor: pointer;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+}
+
+.roles p:hover {
+  background-color: #f8f9fa;
+}
+
+.signup-box {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+
+.signup-box button {
+  padding: 0.8rem 3.2rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.signup-box button:nth-child(2) {
+  background-color: var(--primary-color);
+}
+.signup-box button:nth-child(2) a {
+  color: var(--white);
+}
+
+.signup-box button a {
+  font-size: 1rem;
+}
+/* Header */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 header {
+  background-color: var(--white);
   height: 60px;
   width: 100%;
   display: grid;
@@ -61,6 +165,8 @@ header {
 
 .headBar .menu {
   font-size: 38px;
+  display: flex;
+  align-items: center;
 }
 
 /* HERO Section */
@@ -202,8 +308,8 @@ header {
   background-color: var(--dark);
 }
 
-.start-guide a:hover {
-  color: var(--white);
+.start-guide button a {
+  color: var(--primary-color);
 }
 
 /* Browse Jobs */
@@ -230,9 +336,20 @@ header {
 
 .browse-jobs ul li {
   cursor: pointer;
-  background-color: #e9ecef;
+  background-color: #f8f9fa;
   border-radius: 16px;
   padding: 2rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.others {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.others.active {
+  display: flex;
 }
 
 .browse-jobs a {
