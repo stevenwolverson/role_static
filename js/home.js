@@ -2,6 +2,7 @@ const startGuideBtn = document.querySelector(".start-guide button");
 const browseJobBtn = document.querySelectorAll(".browse-jobs ul li");
 const clientGuideBtn = document.querySelectorAll(".client-guides ul li");
 const rolesBtn = document.querySelectorAll(".roles p");
+const heroBtn = document.querySelector(".hero button");
 const signupBox = document.querySelectorAll(".signup-box button");
 const hiddenMenu = document.querySelector(".hiddenMenu");
 const menuBtn = document.querySelector(".menu");
@@ -39,6 +40,11 @@ showLists.addEventListener("click", () => {
     ? "Show less"
     : "Show more (6)";
 });
+
+heroBtn.addEventListener(
+  "click",
+  () => (window.location.href = heroBtn.children[0].getAttribute("href"))
+);
 
 signupBox.forEach((btn) => navigatePage(btn));
 rolesBtn.forEach((btn) => navigatePage(btn));

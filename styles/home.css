@@ -213,6 +213,7 @@ header {
 
 .hero button {
   display: flex;
+  cursor: pointer;
   align-items: center;
   border: none;
   border-radius: 2px;
