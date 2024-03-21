@@ -8,6 +8,7 @@
   --dark: #001526;
   --gray: #ced4da;
   --dark-gray: #212529;
+  --light-blue: #e7f5ff;
 }
 
 * {
@@ -192,17 +193,20 @@ header {
   font-size: 1.2rem;
 }
 
-.hero-slogan img {
-  position: absolute;
-}
-
 .hero span {
   font-family: inherit;
   color: var(--primary-color);
 }
 
+.hero-img {
+  height: 340px;
+  margin-bottom: 1.2rem;
+}
+
 .hero img {
+  display: block;
   width: 100%;
+  height: 100%;
 }
 
 .hero a {
@@ -337,10 +341,10 @@ header {
 
 .browse-jobs ul li {
   cursor: pointer;
-  background-color: #f8f9fa;
+  background-color: var(--light-blue);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 105, 191, 0.3);
 }
 
 .others {
@@ -359,7 +363,7 @@ header {
 }
 
 .browse-jobs ul li:hover {
-  background-color: var(--gray);
+  background-color: var(--secondary-color);
 }
 
 .show-more {
