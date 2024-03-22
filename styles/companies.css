@@ -86,7 +86,6 @@ header {
   display: flex;
   gap: 1rem;
   align-items: center;
-  text-wrap: nowrap;
 }
 
 .selection-bar li {
@@ -99,6 +98,7 @@ header {
   font-size: 0.9rem;
   text-decoration: none;
   padding: 8px 12px;
+  text-wrap: nowrap;
 }
 
 /*  Container */
