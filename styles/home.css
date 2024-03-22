@@ -504,9 +504,3 @@ footer span {
   flex-direction: column;
   gap: 12px;
 }
-
-@media (width > 480px) {
-  body {
-    display: none;
-  }
-}
