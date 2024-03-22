@@ -505,7 +505,7 @@ footer span {
   gap: 12px;
 }
 
-@media (width > 450px) {
+@media (width > 480px) {
   body {
     display: none;
   }
