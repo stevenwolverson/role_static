@@ -232,7 +232,7 @@ header {
 }
 
 .trusted-by {
-  margin: 0 1rem 0 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .trusted-by p {
@@ -503,4 +503,10 @@ footer span {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+@media (width > 420px) {
+  body {
+    display: none;
+  }
 }
