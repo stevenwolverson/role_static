@@ -92,6 +92,8 @@ header {
   border: 2px solid var(--gray);
   padding: 8px 12px;
   border-radius: 99px;
+  width: 100%;
+  text-wrap: nowrap;
 }
 
 .selection-bar a {
