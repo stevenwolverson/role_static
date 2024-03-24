@@ -104,6 +104,7 @@ header {
   font-size: 0.9rem;
   text-decoration: none;
   padding: 8px 12px;
+  text-wrap: nowrap;
 }
 
 /*  Container */
