@@ -89,18 +89,21 @@ header {
 }
 
 .selection-bar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
   border: 2px solid var(--gray);
   padding: 8px 12px;
   border-radius: 99px;
-  width: 100%;
-  text-wrap: nowrap;
+  width: 220px;
+  height: 45px;
 }
 
 .selection-bar a {
   font-size: 0.9rem;
   text-decoration: none;
   padding: 8px 12px;
-  text-wrap: nowrap;
 }
 
 /*  Container */
