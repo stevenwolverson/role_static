@@ -89,10 +89,12 @@ header {
 }
 
 .selection-bar ul li {
+  width: 300px;
   border: 2px solid var(--gray);
   padding: 8px 16px;
   border-radius: 99px;
-  text-wrap: nowrap;
+  /* text-wrap: nowrap; */
+  white-space: nowrap;
 }
 
 /*  Container */
