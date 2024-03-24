@@ -81,9 +81,14 @@ header {
   display: none;
 }
 
+.selection-bar ul::-webkit-scrollbar {
+  display: none;
+}
+
 .selection-bar ul {
   list-style: none;
   display: flex;
+  overflow-y: hidden;
   gap: 1rem;
   align-items: center;
 }
