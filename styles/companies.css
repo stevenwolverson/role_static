@@ -59,11 +59,6 @@ header {
 }
 
 /* Selection Bar */
-.selection-bar {
-  margin: 1.2rem;
-  padding: 10px 12px;
-  overflow-x: scroll;
-}
 
 .title {
   margin: 2rem 1.2rem 2.2rem 1.2rem;
@@ -77,38 +72,25 @@ header {
   text-decoration-thickness: 4px;
 }
 
-.selection-bar::-webkit-scrollbar {
-  display: none;
+.selection-bar {
+  margin: 1rem 2rem 1.2rem 2rem;
+}
+
+.selection-bar ul {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  list-style: none;
 }
 
 .selection-bar ul::-webkit-scrollbar {
   display: none;
 }
 
-.selection-bar ul {
-  list-style: none;
-  display: flex;
-  overflow-y: hidden;
-  gap: 1rem;
-  align-items: center;
-}
-
-.selection-bar li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-wrap: nowrap;
+.selection-bar ul li {
   border: 2px solid var(--gray);
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-radius: 99px;
-  width: 220px;
-  height: 45px;
-}
-
-.selection-bar a {
-  font-size: 0.9rem;
-  text-decoration: none;
-  padding: 8px 12px;
   text-wrap: nowrap;
 }
 
