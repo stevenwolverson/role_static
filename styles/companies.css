@@ -78,6 +78,7 @@ header {
 
 .selection-bar ul {
   display: flex;
+  flex-wrap: nowrap;
   gap: 1rem;
   overflow-x: scroll;
   list-style: none;
