@@ -335,21 +335,24 @@ header {
   margin-top: 1.5rem;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .browse-jobs ul li {
   cursor: pointer;
   background-color: var(--light-blue);
-  border-radius: 16px;
-  padding: 2rem;
+  padding: 10px 12px;
   box-shadow: 3px 3px 5px rgba(0, 105, 191, 0.3);
+}
+
+.browse-jobs li a {
+  font-size: 0.9rem;
 }
 
 .others {
   display: none;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -413,7 +416,8 @@ header {
   cursor: pointer;
   border-radius: 1rem;
   flex-direction: column;
-  background-color: #e67700;
+  /* background-color: #e67700; */
+  background-image: linear-gradient(to right, #e03131, #fab005);
   padding: 2rem 1rem;
 }
 
@@ -503,4 +507,10 @@ footer span {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+@media (width >= 500px) {
+  body {
+    display: none;
+  }
 }
