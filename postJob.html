@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taprole | Discover your unique role</title>
+    <link
+      rel="shortcut icon"
+      href="./imgs/logo/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/postJob.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <h1>role</h1>
+        </a>
+      </div>
+      <div class="headBar">
+        <button><a href="./login.html">Log In</a></button>
+      </div>
+    </header>
+
+    <section class="postJob">
+      <div class="title">
+        <h2>Post a Job</h2>
+        <p>The fast and easy way to find great candidates</p>
+      </div>
+
+      <div class="form-container">
+        <form>
+          <label for="jobTitle">Basic Info</label>
+          <input type="text" placeholder="Job title" required />
+
+          <label for="companyName">Company Name</label>
+          <input type="text" placeholder="Company name" />
+
+          <label for="industry">Industry</label>
+          <select name="industry" id="industry">
+            <option value="IT & development">IT & development</option>
+            <option value="Logistic & Manufacturing">
+              Logistic & Manufacturing
+            </option>
+            <option value="Media & Design">Media & Design</option>
+            <option value="Sales & Marketing">Sales & Marketing</option>
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Law & Government">Law & Government</option>
+            <option value="Education">Education</option>
+            <option value="Engineering & Architecture">
+              Engineering & Architecture
+            </option>
+            <option value="HR & Management">HR & Management</option>
+            <option value="Finance & Accounting">Finance & Accounting</option>
+            <option value="Admin & Customer Service">
+              Admin & Customer Service
+            </option>
+            <option value="Health & Medical">Health & Medical</option>
+          </select>
+
+          <label for="location">Location</label>
+          <select name="location" id="location">
+            <option value="Malaysia">Malaysia</option>
+          </select>
+
+          <label for="jobType">Job Type</label>
+          <select name="jobType" id="jobType">
+            <option value="Intern">Intern</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Contract">Contract</option>
+          </select>
+
+          <label for="workplace">Workplace</label>
+          <select name="workplace" id="workplace">
+            <option value="remote">Remote</option>
+            <option value="office">Office</option>
+          </select>
+
+          <label for="careerLevel">Career Level</label>
+          <select name="careerLevel" id="careerLevel">
+            <option value="entry">Entry</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="experienced">Experienced</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+          </select>
+
+          <div class="salaryRange">
+            <h3>Salary Range</h3>
+            <input type="text" required id="for" placeholder="From" />
+            <input type="text" required id="to" placeholder="To" />
+          </div>
+
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            id=""
+            cols="30"
+            rows="10"
+            autofocus
+            placeholder="Please mention the description"
+          ></textarea>
+
+          <label for="requirements">Requirements</label>
+          <textarea
+            name="requirements"
+            id=""
+            cols="30"
+            rows="10"
+            autofocus
+            placeholder="Please mention the requirements"
+          ></textarea>
+
+          <label for="skills">Skills</label>
+          <textarea
+            name="skills"
+            id=""
+            cols="30"
+            rows="10"
+            autofocus
+            placeholder="Please mention the skills"
+          ></textarea>
+        </form>
+      </div>
+    </section>
+
+    <p class="footer">© Copyright 2024. taprole® Sdn.Bhd.</p>
+  </body>
+</html>
