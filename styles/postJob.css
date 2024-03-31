@@ -63,14 +63,29 @@ header {
   margin: 1rem;
 }
 
+.title {
+  position: relative;
+}
+
 .title h2 {
   font-size: 2.4rem;
   letter-spacing: -1.5px;
 }
 
 .title p {
-  font-size: 1.1rem;
-  padding-right: 2rem;
+  font-size: 1rem;
+  padding-right: 6.2rem;
+  color: #868e96;
+}
+
+.title img {
+  position: absolute;
+  width: 100px;
+  right: 0;
+  bottom: -34px;
+  stroke: #0069bf;
+  color: #0069bf;
+  z-index: -99;
 }
 
 /* FORM */
@@ -78,7 +93,7 @@ header {
   /* display: flex; */
   /* flex-direction: column; */
   margin-top: 2rem;
-  border: 1px solid var(--gray);
+  border: 2px solid var(--dark-gray);
   border-radius: 8px;
   padding: 1rem 1.2rem;
   background-color: var(--light-gray);
@@ -87,6 +102,7 @@ header {
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 form label {
@@ -128,6 +144,18 @@ textarea {
   border-radius: 4px;
   padding: 8px 12px;
   margin-bottom: 1.5rem;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--dark);
+  color: var(--white);
+  cursor: pointer;
 }
 
 /* Footer */
