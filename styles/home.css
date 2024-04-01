@@ -123,6 +123,7 @@
 }
 
 header {
+  z-index: 999;
   background-color: var(--white);
   height: 60px;
   width: 100%;
@@ -278,7 +279,7 @@ header {
 .guides {
   display: flex;
   gap: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .guide-content {
@@ -294,6 +295,7 @@ header {
 }
 
 .start-guide button {
+  cursor: pointer;
   background-color: #fff;
   width: 100%;
   border: 2px solid var(--primary-color);

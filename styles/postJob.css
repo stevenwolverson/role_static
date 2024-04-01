@@ -93,7 +93,7 @@ header {
   /* display: flex; */
   /* flex-direction: column; */
   margin-top: 2rem;
-  border: 2px solid var(--dark-gray);
+  border: 2px solid var(--gray);
   border-radius: 8px;
   padding: 1rem 1.2rem;
   background-color: var(--light-gray);

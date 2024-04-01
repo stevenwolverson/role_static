@@ -46,6 +46,10 @@ heroBtn.addEventListener(
   () => (window.location.href = heroBtn.children[0].getAttribute("href"))
 );
 
+startGuideBtn.addEventListener(
+  "click",
+  () => (location.href = startGuideBtn.children[0].getAttribute("href"))
+);
 signupBox.forEach((btn) => navigatePage(btn));
 rolesBtn.forEach((btn) => navigatePage(btn));
 browseJobBtn.forEach((btn) => navigatePage(btn));
